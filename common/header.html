@@ -15,7 +15,7 @@ function scoreloadByEventID(eventID) {
 
   $.ajax({
     type:'GET',
-    url:'http://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event='+eventID,
+    url:'https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/summary?event='+eventID,
     dataType:'json',
     async:true,
     success:function(data){

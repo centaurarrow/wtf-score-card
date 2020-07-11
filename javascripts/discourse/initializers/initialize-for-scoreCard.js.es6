@@ -11,8 +11,8 @@ export default {
           const scoreCard = $('[data-wrap="scoreCard"]', $elem);
           if (!scoreCard.length) return;
           console.log('here');
-          console.log(scoreCard.innerText);
-          scoreloadByEventID(scoreCard.innerText);
+          console.log(scoreCard[0].innerText);
+          scoreloadByEventID(scoreCard[0].innerText);
 
          // loadScript(
          //   "../../score-card.js"
