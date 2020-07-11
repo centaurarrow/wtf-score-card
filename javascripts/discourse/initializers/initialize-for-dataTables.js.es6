@@ -39,7 +39,7 @@ export default {
           trimLeading: true,
           id: "scoreCard",
           group: "insertions",
-          icon: "table",
+          icon: "check",
           title: "scoreCard_button",
           perform: function(e) {
             return e.applySurround(
