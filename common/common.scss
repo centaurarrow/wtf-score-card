@@ -10,7 +10,7 @@
 text-align: center;
 }
 
-[role="tab"] {
+[role="score-tab"] {
   position: relative;
   margin: 0;
   padding: 0.3em 0.5em 0.4em;
@@ -23,9 +23,9 @@ text-align: center;
   background: hsl(220, 20%, 94%);
 }
 
-[role="tab"]:hover::before,
-[role="tab"]:focus::before,
-[role="tab"][aria-selected="true"]::before {
+[role="score-tab"]:hover::before,
+[role="score-tab"]:focus::before,
+[role="score-tab"][aria-selected="true"]::before {
   position: absolute;
   bottom: 100%;
   right: -1px;
@@ -35,18 +35,18 @@ text-align: center;
   content: '';
 }
 
-[role="tab"][aria-selected="true"] {
+[role="score-tab"][aria-selected="true"] {
   border-radius: 0;
   //background: hsl(220, 43%, 99%);
   background: #fff;
   outline: 0;
 }
 
-[role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
+[role="score-tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
   //border-top: 5px solid hsl(218, 96%, 48%);
 }
 
-[role="tab"][aria-selected="true"]::after {
+[role="score-tab"][aria-selected="true"]::after {
   position: absolute;
   z-index: 3;
   bottom: -1px;
@@ -59,20 +59,20 @@ text-align: center;
   content: '';
 }
 
-[role="tab"]:hover,
-[role="tab"]:focus,
-[role="tab"]:active {
+[role="score-tab"]:hover,
+[role="score-tab"]:focus,
+[role="score-tab"]:active {
   outline: 0;
   border-radius: 0;
   color: inherit;
 }
 
-[role="tab"]:hover::before,
-[role="tab"]:focus::before {
+[role="score-tab"]:hover::before,
+[role="score-tab"]:focus::before {
   border-color: hsl(20, 96%, 48%);
 }
 
-[role="tabpanel"] {
+[role="score-tabpanel"] {
   position: relative;
   z-index: 2;
   //padding: 0.5em 0.5em 0.7em;
@@ -82,13 +82,13 @@ text-align: center;
  // background: hsl(220, 43%, 99%);
 }
 
-[role="tabpanel"]:focus {
+[role="score-tabpanel"]:focus {
   border-color: hsl(20, 96%, 48%);
   box-shadow: 0 0 0.2em hsl(20, 96%, 48%);
   outline: 0;
 }
 
-[role="tabpanel"]:focus::after {
+[role="score-tabpanel"]:focus::after {
   position: absolute;
   bottom: 0;
   right: -1px;
@@ -98,11 +98,11 @@ text-align: center;
   content: '';
 }
 
-[role="tabpanel"] p {
+[role="score-tabpanel"] p {
   margin: 0;
 }
 
-[role="tabpanel"] * + p {
+[role="score-tabpanel"] * + p {
   margin-top: 1em;
 }
 
@@ -111,5 +111,4 @@ text-align: center;
   background-size: 45px 45px;
   min-height:300px;
   // opacity:0.5;
-
 }
