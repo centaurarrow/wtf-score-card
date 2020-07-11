@@ -8,9 +8,10 @@ export default {
       // Decorates posts with scoreCard
       api.decorateCooked(
         $elem => {
-          const scoreCard = $('[data-wrap="scoreCard"] table', $elem);
+          const scoreCard = $('[data-wrap="scoreCard"]', $elem);
           if (!scoreCard.length) return;
           console.log('here');
+
           loadScript(
             "../../score-card.js"
           ).then(() => {
