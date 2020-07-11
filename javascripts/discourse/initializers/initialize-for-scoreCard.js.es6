@@ -10,9 +10,9 @@ export default {
         $elem => {
           const scoreCard = $('[data-wrap="scoreCard"] table', $elem);
           if (!scoreCard.length) return;
-
+          console.log('here');
           loadScript(
-            "score-card.js"
+            "../../score-card.js"
           ).then(() => {
             scoreloadByEventID(554272);
             //scoreCard.dataTable();
