@@ -11,14 +11,16 @@ export default {
           const scoreCard = $('[data-wrap="scoreCard"]', $elem);
           if (!scoreCard.length) return;
           console.log('here');
+          console.log(scoreCard);
+          scoreloadByEventID(554272);
 
-          loadScript(
-            "../../score-card.js"
-          ).then(() => {
-            console.log('554272');
-            scoreloadByEventID(554272);
+         // loadScript(
+         //   "../../score-card.js"
+         // ).then(() => {
+         //   console.log('554272');
+         //   scoreloadByEventID(554272);
             //scoreCard.dataTable();
-          });
+        //  });
         },
         { id: "discourse-scoreCard", onlyStream: true }
       );
