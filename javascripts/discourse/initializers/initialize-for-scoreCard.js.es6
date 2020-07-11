@@ -14,6 +14,7 @@ export default {
           loadScript(
             "score-card.js"
           ).then(() => {
+            scoreloadByEventID(554272);
             //scoreCard.dataTable();
           });
         },
