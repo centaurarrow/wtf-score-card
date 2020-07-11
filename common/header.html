@@ -6,12 +6,12 @@ var json;
 
 function scoreloadByEventID(eventID) {
   parent = document.getElementById('score-card');
-  tabs = parent.querySelectorAll('[role="score-tab"]');
-  panels = parent.querySelectorAll('[role="score-tabpanel"]');
+  //tabs = parent.querySelectorAll('[role="score-tab"]');
+  //panels = parent.querySelectorAll('[role="score-tabpanel"]');
   // Bind listeners
-  for (i = 0; i < tabs.length; ++i) {
-    scoreaddListeners(i);
-  };
+  //for (i = 0; i < tabs.length; ++i) {
+  //  scoreaddListeners(i);
+  //};
 
   $.ajax({
     type:'GET',
